@@ -65,8 +65,8 @@ Training on ScanNet doesnot require finetuning the backbone. Just freeze pretrai
 
 ### Training STPLS3D dataset
 ```
-./tools/dist_train.sh configs/softgroup_stpls3d_backbone.yaml 4
-./tools/dist_train.sh configs/softgroup_stpls3d.yaml 4
+python ./tools/train.py  configs/softgroup_stpls3d_backbone.yam configs/softgroup_stpls3d_backbone.yaml 
+python ./tools/train.py  configs/softgroup_stpls3d.yaml 
 ```
 
 ## Inference
